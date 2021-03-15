@@ -7,8 +7,8 @@ function Table(props) {
       <thead className="thead-dark">
         <tr>
           <th scope="col"></th>
-          <th scope="col" onClick={props.sort}>First</th>
-          <th scope="col">Last</th>
+          <th scope="col" onClick={props.sort}>Last</th>
+          <th scope="col">First</th>
           <th scope="col" onClick={props.sort}>Email</th>
           <th scope="col">Phone</th>
         </tr>
@@ -19,8 +19,8 @@ function Table(props) {
           return(
             <tr key={index}>
               <th scope="row"><img src={user.picture.thumbnail} alt="Profile Thumbnail" /></th>
-              <td>{user.name.first}</td>
               <td>{user.name.last}</td>
+              <td>{user.name.first}</td>
               <td>{user.email}</td>
               <td>{user.phone}</td>
             </tr>

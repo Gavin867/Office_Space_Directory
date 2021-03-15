@@ -1,4 +1,4 @@
-# Office Space (Directory)
+# Office Space Directory
 
 ![License Icon](https://img.shields.io/badge/license-GPL3.0-informational.svg)
 

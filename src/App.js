@@ -2,34 +2,40 @@ import './App.css';
 import Header from "./components/header";
 import Form from "./components/form";
 import Table from "./components/table"
-import React, {Component} from "react";
+import React, { Component } from "react";
 import api from "./utils/API"
 
 
 class App extends Component {
   state = {
-    employees:[],
-    search:"",
-    originalEmployees:[]
+    employees: [],
+    search: "",
+    originalemployees: [],
+    sortAscend: true
   }
   componentDidMount() {
     api.search()
-      .then(response =>this.setState({employees:response.data.results, originalEmployees:response.data.results}))
+      .then(response =>
+        this.setState({ 
+          employees: response.data.results, 
+          originalEmployees: response.data.results 
+        }))
       .catch(err => console.log(err));
-  }
-  
-  handleInputChange = (event) =>{
-    const {name,value} = event.target;
-    this.setState({[name]:value})
+  };
+
+  handleInputChange = (event) => {
+    const { name, value } = event.target;
+    
+    this.setState({ [name]: value })
     console.log(value)
-    const newEmployee = this.state.originalEmployees.filter(employee =>employee.name.first.toLowerCase().includes(value.toLowerCase())||employee.name.last.toLowerCase().includes(value.toLowerCase()))
-    this.setState({employees:newEmployee})
+    const newEmployee = this.state.originalEmployees.filter(employee => employee.name.first.toLowerCase().includes(value.toLowerCase()) || employee.name.last.toLowerCase().includes(value.toLowerCase()))
+    this.setState({ employees: newEmployee })
   }
-handleSortChange = () =>{
-  const newEmployees = this.state.employees.sort((a,b)=> a.name.first.localeCompare(b.name.first))
-  this.setState({employees:newEmployees})
-}
-  render(){
+  handleSortChange = () => {
+    const newEmployees = this.state.employees.sort((a, b) => a.name.first.localeCompare(b.name.first))
+    this.setState({ employees: newEmployees })
+  }
+  render() {
 
     return (
       <>
@@ -37,11 +43,11 @@ handleSortChange = () =>{
           <Header />
         </div>
         <div>
-          <Form form = {this.state.form} handleInputChange = {this.handleInputChange} />
-        </div>  
+          <Form form={this.state.form} handleInputChange={this.handleInputChange} />
+        </div>
         <div>
-          <Table employees = {this.state.employees} handleSortChange = {this.handleSortChange}/>
-        </div>  
+          <Table employees={this.state.employees} handleSortChange={this.handleSortChange} />
+        </div>
       </>
     );
   }
