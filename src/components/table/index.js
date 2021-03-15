@@ -15,9 +15,9 @@ function Table(props) {
       </thead>
 
       <tbody>
-        {props.randomUser.length > 0 ? props.randomUser.map(user => {
+        {props.employees.length > 0 ? props.employees.map((user, index) => {
           return(
-            <tr>
+            <tr key={index}>
               <th scope="row"><img src={user.picture.thumbnail} alt="Profile Thumbnail" /></th>
               <td>{user.name.first}</td>
               <td>{user.name.last}</td>

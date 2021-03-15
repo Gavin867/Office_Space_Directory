@@ -1,9 +1,8 @@
 import axios from "axios";
-const BASEURL = "https://randomuser.me/api/?&results=";
-const resultNumber = "40";
 
+// eslint-disable-next-line 
 export default {
     search: function() {
-        return axios.get(BASEURL + resultNumber);
+        return axios.get("https://randomuser.me/api/?&results=40");
     }
 };
