@@ -5,7 +5,7 @@ function Form(props) {
         <input
           className="form-control col-lg-10"
           type="search"
-          placeholder="Search Employees"
+          placeholder="Search Employees by Name"
           aria-label="Search"
           name="search"
           value={props.employeeSearch}
