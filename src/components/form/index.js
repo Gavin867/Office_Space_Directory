@@ -3,7 +3,7 @@ function Form(props) {
     <div className="container">
       <form>
         <input
-          className="form-control col-lg-10"
+          className="form-control"
           type="search"
           placeholder="Search Employees by Name"
           aria-label="Search"
