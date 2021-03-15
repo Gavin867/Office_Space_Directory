@@ -22,8 +22,8 @@ class App extends Component {
     const {name,value} = event.target;
     this.setState({[name]:value})
     console.log(value)
-    const newEmoployee = this.state.originalEmployees.filter(employee =>employee.name.first.toLowerCase().includes(value.toLowerCase())||employee.name.last.toLowerCase().includes(value.toLowerCase()))
-    this.setState({employees:newEmoployee})
+    const newEmployee = this.state.originalEmployees.filter(employee =>employee.name.first.toLowerCase().includes(value.toLowerCase())||employee.name.last.toLowerCase().includes(value.toLowerCase()))
+    this.setState({employees:newEmployee})
   }
 handleSortChange = () =>{
   const newEmployees = this.state.employees.sort((a,b)=> a.name.first.localeCompare(b.name.first))
