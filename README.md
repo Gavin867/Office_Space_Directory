@@ -2,7 +2,7 @@
 
 ![License Icon](https://img.shields.io/badge/license-GPL3.0-informational.svg)
 
-A react and state application to search and sort results from an employee generator API.
+A REACT application that uses state to search and sort results from a random employee generator API.
 
 ## Getting Started with Create React App
 
@@ -28,9 +28,9 @@ GitHub Repository Link: https://github.com/Gavin867/Office_Space_Directory
 
 ## Application Summary
 
-The Office Space Directory is an experiment with react components and using state to sort data retrieved from an api. With this application you can perform the following tasks:
+The Office Space Directory uses REACT and state to retrieve, render, and sort data retrieved from an API. With this application you can perform the following tasks:
 
-1. Automatically query API when page loads or reloads
+1. Automatically query API for new employees upon loading/reloading the app.
 2. Search employees by first and last name.
 3. Sort employees by last name either A-Z or Z-A.
 
@@ -40,13 +40,13 @@ The Office Space Directory is an experiment with react components and using stat
 
 ## Installation
 
-No installation is required for running the deployed version of the Big Kahuna Burger App. Simply click the '[Deployed Application Link]()' provided in the '[Location](#location)' section to get started.
+No installation is required for running the deployed version of the Office Space Directory. Simply click the '[Deployed Application Link]()' provided in the '[Location](#location)' section to get started.
 
 When downloading and running the application locally, use the following steps:
 
 2. Clone the repository to your computer and open the file in your code editor.
 3. Open a new CLI/terminal instance in the Office Space Directory code file and run "npm init -y" to install the necessary node modules.
-4. When all components are done loading, type "npm start" in the CLI. The application will automatically open in a new browser tab.
+4. When all components are done loading, type "npm start" in the CLI. The application will automatically open on http://localhost:3006/ in a new browser tab.
 
 ## Testing
 
@@ -85,7 +85,7 @@ Have questions? Contact Gavin Calkins at [gavin.calkins@gmail.com](mailto:gavin.
  
 ## License
 
-    Office Space Directory. A react and state application to search and sort results from an employee generator API.
+    Office Space Directory. A REACT application that uses state to search and sort results from a random employee generator API.
 
     Copyright (C) 2021  Gavin B. Calkins 
 
