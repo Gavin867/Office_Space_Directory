@@ -28,37 +28,25 @@ GitHub Repository Link: https://github.com/Gavin867/Office_Space_Directory
 
 ## Application Summary
 
-<!-- ![Main Menu](https://github.com/Gavin867/Big_Kahuna_Burger_App/blob/main/public/assets/images/readme-images/main-page.png)
+The Office Space Directory is an experiment with react components and using state to sort data retrieved from an api. With this application you can perform the following tasks:
 
-The Big Kahunna Burger App can be used to store hamburger information in a mySQL database for easy reference. With this application you can perform the following tasks:
-
-1. Create new burgers in the "Burgers Queued" list.
-2. Move burgers to the "Burgers Eaten" list.
-3. Delete burgers from the application and database. -->
+1. Automatically query API when page loads or reloads
+2. Search employees by first and last name.
+3. Sort employees by last name either A-Z or Z-A.
 
 ## Demo
 
 ![Demo](https://github.com/Gavin867/Office_Space_Directory/blob/main/public/assets/images/osd-demo.gif)
 
 ## Installation
-<!-- 
-No installation is required for running the deployed version of the Big Kahuna Burger App. Simply click the '[Deployed Application Link](https://big-kahuna-burger-app.herokuapp.com/)' provided in the '[Location](#location)' section to get started.
+
+No installation is required for running the deployed version of the Big Kahuna Burger App. Simply click the '[Deployed Application Link]()' provided in the '[Location](#location)' section to get started.
 
 When downloading and running the application locally, use the following steps:
 
-1. Install mySQL and MySQL workbench using the directions outlined in the '[MySQL Installation Guide](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/)'.
-2. Clone the repository to your computer.
-3. Open a new terminal instance in the Big Kahuna Burger App code file and run "npm init -y" to install the necessary node modules.
-4. Create a .env file in the root of the directory with the following data:
-
-        DB_USER=root
-        DB_PASS=**Your Password Here**
-        DB_DATABASE=bigkahuna_DB
-
-6. Log into your mySQL workbench, copy the contents of Big Kahuna Burger App's bigkahuna_DB.sql file into your workbench and hit the lightning button to create your database.
-7. If you would like to use the seed data, copy the contents of Big Kahuna Burger App's bigkahuna_seeds.sql file into your workbench and hit the lightning button to add the data to your tables.
-8. In the Big Kahuna Burger App file code terminal, type "node app" and hit ENTER.
-9. A the application will launch and you're up and running! -->
+2. Clone the repository to your computer and open the file in your code editor.
+3. Open a new CLI/terminal instance in the Office Space Directory code file and run "npm init -y" to install the necessary node modules.
+4. When all components are done loading, type "npm start" in the CLI. The application will automatically open in a new browser tab.
 
 ## Testing
 
@@ -66,17 +54,18 @@ See usage instructions.
 
 ## Usage Instructions
 
-<!-- 1. To CREATE a Burger, type the name of your new burger into the form and click the "Create Burger" button.
-2. To UPDATE a Burger and move it from the "Burgers Queued" list to the "Burgers Eaten" list, click the "Eat Burger" button next to the corresponding Burger.
-3. To DELETE a Burger from the "Burgers Eaten" list and the application database, click the "Delete Burger" button next to the corresponding Burger. -->
+1. To SEARCH for an employee, type the employee's first or last name.
+2. To SORT employees by last name A-Z, click the 'down arrow' next to the 'Last' header in the table.
+3. To SORT employees by last name Z-A, click the 'up arrow' next to the 'Last' header in the table.
+4. To QUERY the API for new employee names, refresh or reload the page.
 
 ## Future Development
 
-<!-- Additional goals and application features for future devlopment include:
+Additional goals and application features for future devlopment include:
 
-- Complete rework of the front end UI more intuitive operation
-- Updated styling
-- Using REACT to render webpage -->
+- Re-theme Application to render and sort data for an actual purpose. This may actually take the shape of creating a new app entirely with a similar function. 
+- Create a backend server, routes, and database to actually store data.
+- Update styling to something
 
 ## Contributors
 
@@ -86,6 +75,8 @@ See usage instructions.
 
 - Lessons from UW Full Stack Flex Boot Camp.
 - Tutoring with Namita Shenai (https://github.com/NVK2016)
+- Insights from Alejandro Brand (https://github.com/alejo-brand)
+- Insights from Mia Dilberovic (https://github.com/Dilberovicka31) 
 
 
 ## Point of Contact

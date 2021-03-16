@@ -44,6 +44,7 @@ class App extends Component {
     this.setState({ employees: tableFilter })
   };
 
+  // Function shown to my by Mia Dilberovic (https://github.com/Dilberovicka31) 
   sortAscending = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
@@ -54,6 +55,7 @@ class App extends Component {
     this.setState({ employees: sortingAs });
   };
 
+  // Function shown to my by Mia Dilberovic (https://github.com/Dilberovicka31) 
   sortDescending = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
