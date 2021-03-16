@@ -7,9 +7,9 @@ function Table(props) {
       <thead className="thead-dark">
         <tr>
           <th scope="col"></th>
-          <th scope="col" onClick={props.sort}>Last</th>
+          <th scope="col">Last <i class="fas fa-arrow-down" onClick={props.sortAscending}></i> <i class="fas fa-arrow-up" onClick={props.sortDescending}></i></th>
           <th scope="col">First</th>
-          <th scope="col" onClick={props.sort}>Email</th>
+          <th scope="col">Email</th>
           <th scope="col">Phone</th>
         </tr>
       </thead>

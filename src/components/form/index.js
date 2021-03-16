@@ -5,7 +5,7 @@ function Form(props) {
         <input
           className="form-control"
           type="search"
-          placeholder="Search Employee by Name or Click Column Icon to Change Sort Order."
+          placeholder="Search employee by last or first name here. Click down arrow to sort A-Z. Click up arrow to sort Z-A."
           aria-label="Search"
           name="search"
           value={props.employeeSearch}

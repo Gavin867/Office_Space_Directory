@@ -47,20 +47,20 @@ class App extends Component {
   sortAscending = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
-    const sortingAs = this.state.users.sort(
+    const sortingAs = this.state.employees.sort(
       (a, b) =>
-      a.name.first.localeCompare(b.name.first)
+      a.name.last.localeCompare(b.name.last)
     );
-    this.setState({ users: sortingAs });
+    this.setState({ employees: sortingAs });
   };
 
   sortDescending = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
-    const sortingDes = this.state.users.sort((a, b) =>
-      b.name.first.localeCompare(a.name.first)
+    const sortingDes = this.state.employees.sort((a, b) =>
+      b.name.last.localeCompare(a.name.last)
     );
-    this.setState({ users: sortingDes });
+    this.setState({ employees: sortingDes });
   };
 
   render() {
@@ -71,11 +71,15 @@ class App extends Component {
         </div>
         
         <div>
-          <Form form={this.state.form} handleInputs={this.handleInputs} />
+          <Form form={this.state.form} 
+          handleInputs={this.handleInputs}/>
         </div>
 
         <div>
-          <Table employees={this.state.employees} handleSort={this.handleSort} />
+          <Table employees={this.state.employees} 
+          handleSort={this.handleSort} 
+          sortAscending={this.sortAscending}
+          sortDescending={this.sortDescending}/>
         </div>
       </>
     )
