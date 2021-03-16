@@ -24,7 +24,7 @@ A REACT application that uses state to search and sort results from a random emp
 
 GitHub Repository Link: https://github.com/Gavin867/Office_Space_Directory
 
-<!-- Deployed Application Link: https://big-kahuna-burger-app.herokuapp.com/ -->
+Deployed Application Link: https://gavin867.github.io/Office_Space_Directory/
 
 ## Application Summary
 
@@ -40,7 +40,7 @@ The Office Space Directory uses REACT and state to retrieve, render, and sort da
 
 ## Installation
 
-No installation is required for running the deployed version of the Office Space Directory. Simply click the '[Deployed Application Link]()' provided in the '[Location](#location)' section to get started.
+No installation is required for running the deployed version of the Office Space Directory. Simply click the '[Deployed Application Link](https://gavin867.github.io/Office_Space_Directory/)' provided in the '[Location](#location)' section to get started.
 
 When downloading and running the application locally, use the following steps:
 
