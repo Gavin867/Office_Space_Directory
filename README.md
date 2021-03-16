@@ -4,73 +4,111 @@
 
 "So if you could build an office directory using REACT, that would be greaaat."
 
+A react and state application to seart and sort results from an employee generator API.
+
 ## Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Location](#locations)
+- [Application Summary](#application-summary)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Testing](#testing)
+- [Usage Instructions](#usage-instructions)
+- [Future Development](#future-development)
+- [Contributors](#contributors)
+- [Resources](#resources)
+- [Point of Contact](#point-of-contact)
+- [License](#license)
 
-In the project directory, you can run:
+## Locations
 
-### `npm start`
+GitHub Repository Link: https://github.com/Gavin867/Office_Space_Directory
 
-Runs the app in the development mode.\
-Open [http://localhost:3006](http://localhost:3006) to view it in the browser.
+<!-- Deployed Application Link: https://big-kahuna-burger-app.herokuapp.com/ -->
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Application Summary
 
-### `npm test`
+<!-- ![Main Menu](https://github.com/Gavin867/Big_Kahuna_Burger_App/blob/main/public/assets/images/readme-images/main-page.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The Big Kahunna Burger App can be used to store hamburger information in a mySQL database for easy reference. With this application you can perform the following tasks:
 
-### `npm run build`
+1. Create new burgers in the "Burgers Queued" list.
+2. Move burgers to the "Burgers Eaten" list.
+3. Delete burgers from the application and database. -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Demo](https://github.com/Gavin867/Office_Space_Directory/blob/main/public/assets/images/osd-demo.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
+<!-- 
+No installation is required for running the deployed version of the Big Kahuna Burger App. Simply click the '[Deployed Application Link](https://big-kahuna-burger-app.herokuapp.com/)' provided in the '[Location](#location)' section to get started.
 
-### `npm run eject`
+When downloading and running the application locally, use the following steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Install mySQL and MySQL workbench using the directions outlined in the '[MySQL Installation Guide](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/)'.
+2. Clone the repository to your computer.
+3. Open a new terminal instance in the Big Kahuna Burger App code file and run "npm init -y" to install the necessary node modules.
+4. Create a .env file in the root of the directory with the following data:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+        DB_USER=root
+        DB_PASS=**Your Password Here**
+        DB_DATABASE=bigkahuna_DB
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+6. Log into your mySQL workbench, copy the contents of Big Kahuna Burger App's bigkahuna_DB.sql file into your workbench and hit the lightning button to create your database.
+7. If you would like to use the seed data, copy the contents of Big Kahuna Burger App's bigkahuna_seeds.sql file into your workbench and hit the lightning button to add the data to your tables.
+8. In the Big Kahuna Burger App file code terminal, type "node app" and hit ENTER.
+9. A the application will launch and you're up and running! -->
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Testing
 
-## Learn More
+See usage instructions.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage Instructions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- 1. To CREATE a Burger, type the name of your new burger into the form and click the "Create Burger" button.
+2. To UPDATE a Burger and move it from the "Burgers Queued" list to the "Burgers Eaten" list, click the "Eat Burger" button next to the corresponding Burger.
+3. To DELETE a Burger from the "Burgers Eaten" list and the application database, click the "Delete Burger" button next to the corresponding Burger. -->
 
-### Code Splitting
+## Future Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- Additional goals and application features for future devlopment include:
 
-### Analyzing the Bundle Size
+- Complete rework of the front end UI more intuitive operation
+- Updated styling
+- Using REACT to render webpage -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributors
 
-### Making a Progressive Web App
+- Gavin Calkins - https://github.com/Gavin867
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Resources
 
-### Advanced Configuration
+- Lessons from UW Full Stack Flex Boot Camp.
+- Tutoring with Namita Shenai (https://github.com/NVK2016)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Point of Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Have questions? Contact Gavin Calkins at [gavin.calkins@gmail.com](mailto:gavin.calkins@gmail.com?subject=Hi%20Gavin!%20I%20have%20a%20question%20about%20The%20Office%20Space%20Directory!).
+ 
+## License
 
-### `npm run build` fails to minify
+    Office Space Directory. A react and state application to seart and sort results from an employee generator API.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Copyright (C) 2021  Gavin B. Calkins 
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
