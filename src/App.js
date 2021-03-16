@@ -10,7 +10,7 @@ class App extends Component {
   state = {
     employees: [],
     search: "",
-    OGemployees: [],
+    OGs: [],
     sortAscend: true
   };
 
@@ -21,7 +21,7 @@ class App extends Component {
 
           employees: response.data.results,
 
-          OGemployees: response.data.results
+          OGs: response.data.results
 
         }))
       .catch(err => console.log(err));
@@ -31,24 +31,36 @@ class App extends Component {
     event.preventDefault();
 
     const { name, value } = event.target;
-
     this.setState({ 
       [name]: value 
     });
 
-    const filter = this.state.OGemployees.filter(
+    const tableFilter = this.state.OGs.filter(
 
       employee => employee.name.first.toLowerCase().includes(value.toLowerCase())
 
         || employee.name.last.toLowerCase().includes(value.toLowerCase()))
 
-    this.setState({ employees: filter })
+    this.setState({ employees: tableFilter })
   };
 
-  handleSort = () => {
-    const filters = this.state.employees.sort((a, b) => a.name.first.localeCompare(b.name.first))
-    
-    this.setState({ employees: filters })
+  sortAscending = (event) => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+    const sortingAs = this.state.users.sort(
+      (a, b) =>
+      a.name.first.localeCompare(b.name.first)
+    );
+    this.setState({ users: sortingAs });
+  };
+
+  sortDescending = (event) => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+    const sortingDes = this.state.users.sort((a, b) =>
+      b.name.first.localeCompare(a.name.first)
+    );
+    this.setState({ users: sortingDes });
   };
 
   render() {
