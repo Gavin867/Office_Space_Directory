@@ -31,8 +31,8 @@ class App extends Component {
     event.preventDefault();
 
     const { name, value } = event.target;
-    this.setState({ 
-      [name]: value 
+    this.setState({
+      [name]: value
     });
 
     const tableFilter = this.state.OGs.filter(
@@ -46,22 +46,25 @@ class App extends Component {
 
   // Function shown to my by Mia Dilberovic (https://github.com/Dilberovicka31) 
   sortAscending = (event) => {
+
     const { name, value } = event.target;
+
     this.setState({ [name]: value });
-    const sortingAs = this.state.employees.sort(
-      (a, b) =>
-      a.name.last.localeCompare(b.name.last)
-    );
+
+    const sortingAs = this.state.employees.sort((a, b) =>
+      a.name.last.localeCompare(b.name.last));
     this.setState({ employees: sortingAs });
   };
 
   // Function shown to my by Mia Dilberovic (https://github.com/Dilberovicka31) 
   sortDescending = (event) => {
+
     const { name, value } = event.target;
+
     this.setState({ [name]: value });
+
     const sortingDes = this.state.employees.sort((a, b) =>
-      b.name.last.localeCompare(a.name.last)
-    );
+      b.name.last.localeCompare(a.name.last));
     this.setState({ employees: sortingDes });
   };
 
@@ -71,17 +74,17 @@ class App extends Component {
         <div>
           <Header />
         </div>
-        
+
         <div>
-          <Form form={this.state.form} 
-          handleInputs={this.handleInputs}/>
+          <Form form={this.state.form}
+            handleInputs={this.handleInputs} />
         </div>
 
         <div>
-          <Table employees={this.state.employees} 
-          handleSort={this.handleSort} 
-          sortAscending={this.sortAscending}
-          sortDescending={this.sortDescending}/>
+          <Table employees={this.state.employees}
+            handleSort={this.handleSort}
+            sortAscending={this.sortAscending}
+            sortDescending={this.sortDescending} />
         </div>
       </>
     )
