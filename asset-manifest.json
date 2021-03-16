@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Gavin867/Office_Space_Directory/static/css/main.b8eb9820.chunk.css",
+    "main.js": "/Gavin867/Office_Space_Directory/static/js/main.ca93d49b.chunk.js",
+    "main.js.map": "/Gavin867/Office_Space_Directory/static/js/main.ca93d49b.chunk.js.map",
+    "runtime-main.js": "/Gavin867/Office_Space_Directory/static/js/runtime-main.62565d13.js",
+    "runtime-main.js.map": "/Gavin867/Office_Space_Directory/static/js/runtime-main.62565d13.js.map",
+    "static/js/2.5221165a.chunk.js": "/Gavin867/Office_Space_Directory/static/js/2.5221165a.chunk.js",
+    "static/js/2.5221165a.chunk.js.map": "/Gavin867/Office_Space_Directory/static/js/2.5221165a.chunk.js.map",
+    "index.html": "/Gavin867/Office_Space_Directory/index.html",
+    "static/css/main.b8eb9820.chunk.css.map": "/Gavin867/Office_Space_Directory/static/css/main.b8eb9820.chunk.css.map",
+    "static/js/2.5221165a.chunk.js.LICENSE.txt": "/Gavin867/Office_Space_Directory/static/js/2.5221165a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.62565d13.js",
+    "static/js/2.5221165a.chunk.js",
+    "static/css/main.b8eb9820.chunk.css",
+    "static/js/main.ca93d49b.chunk.js"
+  ]
+}
