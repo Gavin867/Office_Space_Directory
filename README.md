@@ -2,9 +2,7 @@
 
 ![License Icon](https://img.shields.io/badge/license-GPL3.0-informational.svg)
 
-"So if you could build an office directory using REACT, that would be greaaat."
-
-A react and state application to seart and sort results from an employee generator API.
+A react and state application to search and sort results from an employee generator API.
 
 ## Getting Started with Create React App
 
@@ -96,7 +94,7 @@ Have questions? Contact Gavin Calkins at [gavin.calkins@gmail.com](mailto:gavin.
  
 ## License
 
-    Office Space Directory. A react and state application to seart and sort results from an employee generator API.
+    Office Space Directory. A react and state application to search and sort results from an employee generator API.
 
     Copyright (C) 2021  Gavin B. Calkins 
 
