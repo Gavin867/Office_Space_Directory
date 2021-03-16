@@ -9,7 +9,7 @@ function Form(props) {
           aria-label="Search"
           name="search"
           value={props.employeeSearch}
-          onChange={props.handleInputChange} />
+          onChange={props.handleInputs} />
       </form>
     </div>
   )
